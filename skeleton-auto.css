@@ -60,26 +60,14 @@
   html {
     font-size: 100%; }
 
-  /* Dark/light mode detection (comment this section out and use the one below for a fixed background color) */
-    @media (prefers-color-scheme: dark) {
-      body {
-        font-size: 18px;
-        line-height: 24px;
-        font-weight: 400;
-        background: #292929;
-        background: radial-gradient(circle, #292929 28%, #1b1b1b 100%);
-        font-family: "Open Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-        color: #FFFFFF; }
-    }
-    @media (prefers-color-scheme: light) {
-      body {
-        font-size: 18px;
-        line-height: 24px;
-        font-weight: 400;
-        background: #F1F1F1;
-        font-family: "Open Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-        color: #222; }
-    }
+  body {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    background: #F1F1F1;
+    font-family: "Open Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #222;
+  }
 
 /* Use this for a fixed background color instead of dark and light mode
     body {
@@ -112,11 +100,11 @@
   /* Links
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
   a {
-    color: #0085FF; 
+    color: #185B8C; 
     text-decoration: none;
   }
   a:hover {
-    color: #0085FF; }
+    color: #185B8C; }
   
   .spacing {
     padding: 0 10px;
@@ -129,7 +117,7 @@
   .social-icon-div {
     padding-bottom: 30px;
   }
-  .social-icon{color:#fff;}
+  .social-icon{color:#000;}
 
   /* Code
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -187,32 +175,6 @@
     border-width: 0;
     border-top: 1px solid #E1E1E1; }
   
-    @media (prefers-color-scheme: dark) {
-  /* ===== Scrollbar CSS ===== */
-    /* Firefox */
-    * {
-      scrollbar-width: thin;
-      scrollbar-color: #171a1d #31363b;
-    }
-  
-    /* Chrome, Edge, and Safari */
-    *::-webkit-scrollbar {
-      width: 8px;
-    }
-  
-    *::-webkit-scrollbar-track {
-      background: #31363b;
-    }
-  
-    *::-webkit-scrollbar-thumb {
-      background-color: #171a1d;
-      border-radius: 30px;
-      border: 3px none #ffffff;
-    }
-   
-  }
-    
-    @media (prefers-color-scheme: light) {
   /* ===== Scrollbar CSS ===== */
     /* Firefox */
     * {
@@ -235,8 +197,6 @@
       border: 3px none #ffffff;
     }
   
-  }
-  
 /* Credit footer
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* Styling for credit footer text */
@@ -255,16 +215,8 @@
   right: 15px; }
 */
 
-/* Switches text color for credit footer for dark/light mode */
-@media (prefers-color-scheme: dark) {
-  .credit-txt-clr{
-      color: #FFF !important;
-  }
-}
-@media (prefers-color-scheme: light) {
-  .credit-txt-clr{
-      color: #100a26 !important;
-  }
+.credit-txt-clr{
+    color: #100a26 !important;
 }
 
 h1, h2, h3, h4, h5, h6 {
