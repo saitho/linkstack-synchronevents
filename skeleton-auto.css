@@ -266,3 +266,17 @@
       color: #100a26 !important;
   }
 }
+
+#avatar {
+    width: 100%;
+    max-height: 80px;
+}
+
+#avatar + h1 {
+    display: none;
+}
+
+.button.button-custom {
+    background-color: #185B8C;
+    background-image: none;
+}
